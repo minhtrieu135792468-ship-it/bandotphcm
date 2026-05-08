@@ -1,0 +1,9 @@
+{
+  "name": "Chào Thành Phố Mới - 168 Xã Phường",
+  "description": "Bản đồ hành chính số tích hợp 168 xã phường, thị trấn mới với dữ liệu ý nghĩa tên gọi và ranh giới GIS chính xác.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
