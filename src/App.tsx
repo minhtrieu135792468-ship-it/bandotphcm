@@ -401,39 +401,28 @@ function DetailView({ feature, onClose }: { feature: MergedFeature | null, onClo
         </div>
 
         {/* Block 4: Media Gallery */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-          <div className="lg:col-span-2">
+        <div className="grid grid-cols-1 gap-10">
+          <div>
             <h3 className="text-sm font-black text-slate-900 uppercase tracking-widest mb-6 flex items-center gap-2">
               <span className="w-2 h-2 bg-[#f27d26] rounded-full"></span>
               Thư viện ảnh địa bàn
             </h3>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+              <div className="aspect-[4/3] bg-slate-100 rounded-2xl overflow-hidden border border-slate-200">
+                <img src="https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?auto=format&fit=crop&q=80&w=400" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              </div>
               <div className="aspect-[4/3] bg-slate-100 rounded-2xl overflow-hidden border border-slate-200">
                 <img src="https://images.unsplash.com/photo-1596402184320-417d7178b2cd?auto=format&fit=crop&q=80&w=400" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <div className="aspect-[4/3] bg-slate-100 rounded-2xl overflow-hidden border border-slate-200">
                 <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&q=80&w=400" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
+              <div className="aspect-[4/3] bg-slate-100 rounded-2xl overflow-hidden border border-slate-200">
+                <img src="https://images.unsplash.com/photo-1496560230580-ed31f4a9ea28?auto=format&fit=crop&q=80&w=400" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              </div>
               <div className="aspect-[4/3] bg-slate-950 rounded-2xl flex flex-col items-center justify-center text-white p-4 text-center cursor-pointer hover:bg-slate-900 transition-colors">
-                <span className="text-xl font-black">+18</span>
+                <span className="text-xl font-black">+24</span>
                 <span className="text-[10px] font-bold uppercase tracking-widest opacity-60">Xem thêm</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h3 className="text-sm font-black text-slate-900 uppercase tracking-widest mb-6 flex items-center gap-2">
-              <span className="w-2 h-2 bg-red-600 rounded-full"></span>
-              Video tư liệu nội bộ
-            </h3>
-            <div className="aspect-video bg-slate-950 rounded-3xl overflow-hidden shadow-2xl relative group cursor-pointer border border-slate-800">
-              <div className="absolute inset-0 flex items-center justify-center group-hover:scale-110 transition-transform">
-                <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
-                  <div className="w-0 h-0 border-t-[8px] border-t-transparent border-l-[14px] border-l-white border-b-[8px] border-b-transparent ml-1"></div>
-                </div>
-              </div>
-              <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&q=80&w=400" className="w-full h-full object-cover opacity-40" />
-              <div className="absolute bottom-4 left-4 right-4 bg-slate-950/60 p-3 rounded-xl backdrop-blur-sm text-[10px] font-black text-white italic">
-                GIỚI THIỆU HÀNH CHÍNH {name}
               </div>
             </div>
           </div>
@@ -442,7 +431,9 @@ function DetailView({ feature, onClose }: { feature: MergedFeature | null, onClo
 
       <div className="bg-[#003366] py-16 px-6 text-center text-white/40">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
-          <div className="w-14 h-14 bg-white rounded-xl mb-6 flex items-center justify-center font-black text-[#003366] text-2xl shadow-2xl">UL</div>
+          <div className="w-14 h-14 bg-white rounded-xl mb-6 flex items-center justify-center overflow-hidden shadow-2xl">
+            <img src="https://upload.wikimedia.org/wikipedia/vi/0/09/Huy_Hi%E1%BB%87u_%C4%90o%C3%A0n.png" alt="Logo" className="w-10 h-10 object-contain" referrerPolicy="no-referrer" />
+          </div>
           <p className="font-black text-white text-sm uppercase tracking-[0.2em]">Trường Đại học Kinh tế - Luật, ĐHQG-HCM</p>
           <p className="text-[11px] mt-2 opacity-50 uppercase font-bold tracking-widest">Digital Administrative Blueprint • GIS Laboratory</p>
         </div>
@@ -544,7 +535,9 @@ export default function App() {
       {/* Top Branding Bar */}
       <header className="h-16 bg-[#003366] text-white flex items-center px-6 shadow-md z-[2000] shrink-0">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-white rounded flex items-center justify-center font-bold text-[#003366] text-xl shadow-lg">UL</div>
+          <div className="w-10 h-10 bg-white rounded flex items-center justify-center overflow-hidden shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/vi/0/09/Huy_Hi%E1%BB%87u_%C4%90o%C3%A0n.png" alt="Logo" className="w-8 h-8 object-contain" referrerPolicy="no-referrer" />
+          </div>
           <div className="hidden sm:block">
             <h1 className="text-sm font-black tracking-tight uppercase leading-none">Hệ thống Bản đồ Hành chính Mới</h1>
             <p className="text-[10px] opacity-70 font-bold uppercase tracking-wider mt-1">Trường Đại học Kinh tế - Luật, ĐHQG-HCM</p>
